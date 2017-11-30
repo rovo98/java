@@ -1,4 +1,6 @@
-import java.sql.Connection;
+package com.myJavaTest.dao ;
+
+import java.sql.Connection ;
 
 /**
  * baseDao接口
