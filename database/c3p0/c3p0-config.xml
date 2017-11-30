@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+   <!--默认配置-->
+    <default-config>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>  
+    </default-config>  
+  
+   <!--配置连接池mysql-->
+    <named-config name="mysql">  
+    	<!-- 数据库连接驱动 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>  
+        <!-- 连接地址 -->
+        <property name="jdbcUrl">jdbc:mysql://120.79.13.71:3306/xiaotuanti_db?useSSL=true</property>  
+        <!-- 用户名 -->
+        <property name="user">root</property>  
+        <!-- 密码 -->
+        <property name="password">xiaotuanti</property>  
+        <!-- 初始化配置 -->
+        <property name="initialPoolSize">3</property>  
+        <!-- 最大空闲时间 -->
+        <property name="maxIdleTime">30</property>  
+        <!-- 最大连接数 -->
+        <property name="maxPoolSize">15</property>  
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">3</property>  
+        <!-- 每次获取的个数 -->
+        <property name="acquireIncrement">1</property>
+        <!-- 获取连接超时时间(单位ms) -->
+        <property name="checkoutTimeout">5000</property>
+        <!-- 心跳检测时间(单位s) -->
+        <property name="idleConnectionTestPeriod">90</property>
+        <!-- 获取连接检测 -->
+        <property name="testConnectionOnCheckout">false</property>
+        <!-- 归还连接检测 -->
+        <property name="testConnectionOnCheckin">false</property>
+        <!-- 协助线程数 -->
+        <property name="numHelperThreads">1</property>
+   </named-config>
+</c3p0-config>
