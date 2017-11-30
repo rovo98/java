@@ -14,7 +14,7 @@
     	<!-- 数据库连接驱动 -->
         <property name="driverClass">com.mysql.jdbc.Driver</property>  
         <!-- 连接地址 -->
-        <property name="jdbcUrl">jdbc:mysql://120.79.13.71:3306/xiaotuanti_db?useSSL=true</property>  
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/xiaotuanti_db?useSSL=true</property>  
         <!-- 用户名 -->
         <property name="user">root</property>  
         <!-- 密码 -->
