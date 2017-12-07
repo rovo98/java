@@ -14,11 +14,11 @@
     	<!-- 数据库连接驱动 -->
         <property name="driverClass">com.mysql.jdbc.Driver</property>  
         <!-- 连接地址 -->
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/xiaotuanti_db?useSSL=true</property>  
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/databaseName?useSSL=true</property>  
         <!-- 用户名 -->
         <property name="user">root</property>  
         <!-- 密码 -->
-        <property name="password">xiaotuanti</property>  
+        <property name="password">password</property>  
         <!-- 初始化配置 -->
         <property name="initialPoolSize">3</property>  
         <!-- 最大空闲时间 -->
@@ -40,4 +40,17 @@
         <!-- 协助线程数 -->
         <property name="numHelperThreads">1</property>
    </named-config>
+   <!-- 配置1 -->
+   <named-config>
+   </named-config>
+   <!-- 配置2 -->
+   <named-config>
+   </named-config>
+   <!-- 配置3 -->
+   <named-config>
+   </named-config>
+   <!-- 配置4 -->
+   <named-config>
+   </named-config>
+   ....
 </c3p0-config>
