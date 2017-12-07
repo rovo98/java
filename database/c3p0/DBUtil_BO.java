@@ -1,4 +1,4 @@
-package com.xiaotuanti.DBUtils;
+package com.rovo98.C3p0PoolTest.DBUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
