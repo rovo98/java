@@ -1,4 +1,4 @@
-package com.xiaotuanti.DBUtils;
+package com.rovo98.C3p0PoolTest.DBUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,19 +10,19 @@ import com.mchange.v2.c3p0.ComboPooledDataSource ;
 /**
  * 
  * @author rovo98
- * c3p0Êı¾İ¿âÁ¬½Ó³Ø
+ * c3p0æ•°æ®åº“è¿æ¥æ± 
  */
 public class C3p0Utils {
 	
-	// Í¨¹ı±êÊ¶·ûÀ´´´½¨ÏàÓ¦µÄÊı¾İ¿âÁ¬½Ó³Ø
+	// é€šè¿‡æ ‡è¯†ç¬¦æ¥åˆ›å»ºç›¸åº”çš„æ•°æ®åº“è¿æ¥æ± 
 	private static ComboPooledDataSource c3p0DataSource ;
-	// ¾²Ì¬¼ÓÔØÅäÖÃ²ÎÊı
+	// é™æ€åŠ è½½é…ç½®å‚æ•°
 	static {
 		c3p0DataSource  = new ComboPooledDataSource("mysql") ;
 	}
 	
 	/**
-	 * ´ÓÁ¬½Ó³ØÖĞ»ñÈ¡Ò»¸öÊı¾İ¿âÁ¬½Ó
+	 * ä»è¿æ¥æ± ä¸­è·å–ä¸€ä¸ªæ•°æ®åº“è¿æ¥
 	 * @return
 	 */
 	public static Connection getConnection() {
@@ -34,7 +34,7 @@ public class C3p0Utils {
 		}
 	}
 	/**
-	 * ÊÍ·ÅÁ¬½Ó·µ»ØÁ¬½Ó³Ø
+	 * é‡Šæ”¾è¿æ¥è¿”å›è¿æ¥æ± 
 	 * @param conn
 	 * @param pstmt
 	 * @param rs
