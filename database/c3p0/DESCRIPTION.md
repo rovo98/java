@@ -57,6 +57,7 @@ author: rovo98
 - 5.bo对象释放连接，返回连接池中，以便下一次请求获取连接。
 
 实例 ：这是定义在dao层中的一些方法实现
+
 已有的javabean定义如下:
 ```java
 package com.rovo98.C3p0PoolTest.model ;
@@ -89,7 +90,9 @@ public class User {
   }
 }
 ```
+
 dao层某个实现:
+
 ```java
 package com.rovo98.C3p0PoolTest.dao.impl ;
 
