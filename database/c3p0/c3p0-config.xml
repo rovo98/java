@@ -41,16 +41,16 @@
         <property name="numHelperThreads">1</property>
    </named-config>
    <!-- 配置1 -->
-   <named-config>
+   <named-config name="initial_1">
    </named-config>
    <!-- 配置2 -->
-   <named-config>
+   <named-config name="initial_2">
    </named-config>
    <!-- 配置3 -->
-   <named-config>
+   <named-config name="initial_3">
    </named-config>
    <!-- 配置4 -->
-   <named-config>
+   <named-config name="initial_4">
    </named-config>
    ....
 </c3p0-config>
