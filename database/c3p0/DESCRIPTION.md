@@ -112,7 +112,7 @@ public class userDaoImpl implements userDao {
     dbBo.setAutoCommit(false) ;
     
     try {
-  		  dbBo.pstmt = dbBo.conn.preparedStatement(sql) ;
+  	dbBo.pstmt = dbBo.conn.preparedStatement(sql) ;
       	dbBo.pstmt.setInt(user.getUserId()) ;
       	dbBo.pstmt.setString(user.getUserName()) ;
       	dbBo.pstmt.setString(user.getUserPW()) ;
