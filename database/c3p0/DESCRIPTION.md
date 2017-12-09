@@ -130,16 +130,15 @@ public class userDaoImpl implements userDao {
   public List<User> queryAllUsers() {
     String sql = "SELECT * FROM users" ;
     dbBo.conn = C3p0Utils.getConnection() ;
-    dbBo.setAutoCommit(false) ;
-    List<User> list = null ;
+    dbBo.setAutoCommit(false) ;            //取消事务自动提交
+    List<User> list = null ;
     try {
-  		dbBo.pstmt = dbBo.conn.preparedStatement(sql) ;
-      	
+  	dbBo.pstmt = dbBo.conn.preparedStatement(sql) ;
       	DBUtils.executeQuery(dbBo) ;
-      	dbBo.commit() ;
-      	list = new ArrayList<User>() ;
+      	dbBo.commit() ;                     //事务提交
+	list = new ArrayList<User>() ;
       	if (dbBo.rs.next()) {
-  		    User user = new User() ;
+  		User user = new User() ;
           	user.setUserId(dbBo.rs.getInt("userId")) ;
           	user.setUserName(dbBo.rs.getString("userName")) ;
           	user.setUserPW(dbBo.rs.getString("userPW")) ;
@@ -149,11 +148,11 @@ public class userDaoImpl implements userDao {
        DBUtils.releaseSource(dbBo) ;
        return list ;
     }catch (SQLException e) {
-  		e.printStackTrace() ;
-      dbBo.rollback() ;
-      DBUtils.releaseSource(dbBo) ;
+      e.printStackTrace() ;
+      dbBo.rollback() ;                  // 事务回滚
+      DBUtils.releaseSource(dbBo) ;
       return list ;
-	}
+    }
     DBUtils.releaseSource(dbBo) ;
     return list ;
   }
