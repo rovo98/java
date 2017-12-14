@@ -3,7 +3,7 @@ author: rovo98
 description: notebook, learning from geeksforgeeks
 ---
 
-# Graph and its representtations
+# Graph and its representations
 
 ### Leading
 
