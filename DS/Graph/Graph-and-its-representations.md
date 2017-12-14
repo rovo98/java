@@ -46,7 +46,7 @@ weight w.
 
 The adjacency matrix for the above example graph is :
 
-![adjacency-matrix-example]()
+![adjacency-matrix-example](https://github.com/rovo98/java-learning/blob/master/images/DS/Graph/graph_representation.png)
 
 - Pros: Representation is easier to implement and follow. Removing an edge takes O(1) time.
 	Queries like whether there is an edge from vertex u to vertex v are efficient and can be done O(1).
