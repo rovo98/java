@@ -1,6 +1,6 @@
 ---
 author: rovo98
-description: notes, learning from geeksforgeeks
+description: notebook, learning from geeksforgeeks
 ---
 
 # Graph and its representtations
@@ -11,7 +11,7 @@ Graph is a data struture that consists of following two components:
 
 - A finte set of **vertices** alse called as nodes.
 - A finte set of **ordered pair of the form (u,v) called as edge. The pair
-  is ordered because (u,v) is not same as (v,u) in case of **derected graph(di-graph)**.
+  is ordered because (u,v) is not same as (v,u) in case of d8rected graph(di-graph)**.
   The pair of form (u,v) indicates that there is an edge from vertex u to vertex v. **The
   edges may contain weight/value/cost**.
   
