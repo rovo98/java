@@ -62,7 +62,7 @@ array[]. **An entry array[i] represents the linked list of vertices adjacent to 
 representation can also be used to represent a weighted graph. The weights of edges can be stored in 
 nodes of linked lists. Following is adjacency list representation of the above graph.
 
-![adjacency-list-example]()
+![adjacency-list-example](https://github.com/rovo98/java-learning/blob/master/images/DS/Graph/adjacency_list_representation.png)
 
 Below is the java code for adjacency list representation of an undirected graph:
 
