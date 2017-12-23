@@ -414,6 +414,17 @@ public class pagenationServlet extends HttpServlet {
 
 ### 测试结果
 
+- 请求页面 
+
+![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view1.png)
+
+- 结果显示页面 ：
+
+![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view2.png)
+
+![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view3.png)
+
+![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view4.png)
 
 ### 总结：分页查询的三种不同方式
 
