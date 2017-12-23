@@ -191,4 +191,10 @@ public class trangleServlet extends HttpServlet {
 ### 测试结果
 
 页面 ：
+- 输入页面 ：
+![trangle_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/trangle_mvc_view1.png)
+- 结果显示页面：
+![trangle_mvc_view2](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/trangle_mvc_view2.png)
+
+![trangle_mvc_view3](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/trangle_mvc_view3.png)
 
