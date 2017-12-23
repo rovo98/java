@@ -424,3 +424,11 @@ public class sqlTestServlet extends HttpServlet {
 ```
 
 测试结果 ：
+
+- 请求页面 ：
+
+![sqlTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/sqlTest_mvc_view1.png)
+
+- 结果显示页面：
+
+![sqlTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/sqlTest_mvc_view2.png)
