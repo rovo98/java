@@ -417,11 +417,11 @@ public class pagenationServlet extends HttpServlet {
 
 - 结果显示页面 ：
 
-![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view2.png)
+![pagenationTest_mvc_view2](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view2.png)
 
-![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view3.png)
+![pagenationTest_mvc_view3](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view3.png)
 
-![pagenationTest_mvc_view1](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view4.png)
+![pagenationTest_mvc_view4](https://github.com/rovo98/java-learning/blob/master/javaWeb/mvc/images/pagenationTest_view4.png)
 
 ### 总结：分页查询的三种不同方式
 
@@ -448,7 +448,8 @@ public class pagenationServlet extends HttpServlet {
   跳转到n页，才查询第n页的数据。拿MySQL数据库来说；根据页面计算当前页的第一个记录的位置。使用:
   ```sql
   select count(*） from tb  ; -- 查询得到记录的总数
-  select * from tb limit pageNo,rowsCount ; -- 查询从第pageNo条记录到rowsCount条记录
+  select * from tb limit pageNo,rowsCount ; -- 查询从第pageNo条记录开始的rowsCount条记录
   ```
+  
  特点 ：
  - 实时性、跳页才查询，数据量小；只加载当前页的记录显示。 
