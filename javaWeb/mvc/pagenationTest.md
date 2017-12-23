@@ -283,13 +283,10 @@ public class pagenationServlet extends HttpServlet {
 		int pageNo = Integer.parseInt(request.getParameter("pageNo")) ;
 		int pageSize = Integer.parseInt(request.getParameter("pageSize")) ;
 		
-		System.out.println(pageNo);
-		System.out.println(pageSize);
 		// 查询当前分页数据并请求重定向到结果显示页面
 		goodsDao gd = new goodsDaoImpl() ;
 		Page<Goods> page = gd.getOnePageGoods(pageNo, pageSize) ;
 		
-		System.out.println(page.getList().size()) ;
 		request.setAttribute("data", page) ;
 		request.getRequestDispatcher("/servletTest/pagenationTestResult.jsp").forward(request, response) ;
 	}
