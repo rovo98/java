@@ -121,8 +121,8 @@ class Graph {
 		// Iterate through all edges of graph, find out subset of both vertices 
 		// of every edge, if both subsets are same, then there is cycle in graph.
 		for (int i=0; i<graph.E; i++) {
-			int x = graph.find(parent, x) ;
-			int y = graph.find(parent, y) ;
+			int x = graph.find(parent, graph.edge[i].src) ;
+			int y = graph.find(parent, graph.edge[i].dest) ;
 			if (x == y) {
 				return true ;
 			}
