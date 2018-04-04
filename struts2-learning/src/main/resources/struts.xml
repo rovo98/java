@@ -15,5 +15,10 @@
         method="execute">
             <result name="success">/HelloWorld.jsp</result>
         </action>
+
+        <action name="register" class="com.rovo98.struts.helloworld.action.RegisterAction"
+                method="execute">
+            <result name="success">/thankyou.jsp</result>
+        </action>
     </package>
 </struts>
