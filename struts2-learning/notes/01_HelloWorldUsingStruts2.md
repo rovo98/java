@@ -8,14 +8,14 @@ description: learning from struts.apache.org.
 
 ## Table of Contents
 
-- [引入]()
-- [具体实现]()
-    - [Step 1:创建model]()
-    - [Step 2:创建controller]()
-    - [Step 3:创建view]()
-    - [Step 4:在struts.xml中添加映射]()
-    - [Step 5:在某个页面创建Action URL]()
-- [What to Remember]()
+- [引入](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#引入)
+- [具体实现](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#具体实现----go-back-to-top)
+    - [Step 1:创建model](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#step-1)
+    - [Step 2:创建controller](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#step-2)
+    - [Step 3:创建view](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#step-3----go-back-to-top)
+    - [Step 4:在struts.xml中添加映射](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#step-4)
+    - [Step 5:在某个页面创建Action URL](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#step-5----go-back-to-top))
+- [What to Remember](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#what-to-remember----go-back-to-top))
 
 ## 引入
 
@@ -31,7 +31,7 @@ Action处理完后，结果选择一个资源来进行响应，响应的资源�
 3. 创建一个Action类来控制用户和 model 和 view 的交互;
 4. 在struts.xml 添加对应的Action类和view的映射关系。
 
-## 具体实现 -- [go-back-to-top]()
+## 具体实现 -- [go-back-to-top](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#hello-world-demo---使用struts-2-框架)
 
 ### Step 1
 
@@ -92,7 +92,7 @@ public class HelloWorldAction extends ActionSupport {
 **[notice]**: Struts 2 框架会创建```HelloWorldAction```类的一个对象，并调用对象的
 ```execute()```方法来响应用户的操作(点击超链接传递相应URL给一个Servlet容器).
 
-### Step 3 -- [go back to top]()
+### Step 3 -- [go back to top](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#hello-world-demo---使用struts-2-框架)
 
 创建一个用来显示```MessageStore```类中信息的视图页面 ```HelloWorld.jsp```
 
@@ -146,7 +146,7 @@ public class HelloWorldAction extends ActionSupport {
 </struts>
 ```
 
-### Step 5 -- [go back to top]()
+### Step 5 -- [go back to top](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#hello-world-demo---使用struts-2-框架)
 
 在Web项目中的index.jsp页面里添加一个```Action URL```, 让用户可以通过点这个链接
 来告诉Struts 2框架执行```HelloWorldAction```的```execute()```方法，并呈现```HelloWorld.jsp```
@@ -188,7 +188,7 @@ Struts 2框架的核心过滤器所过滤；这当然包括*.action请求，```S
 5. 纯HTML响应被发送回浏览器。
 
 
-### What to Remember -- [go back to top]()
+### What to Remember -- [go back to top](https://github.com/rovo98/java-learning/blob/master/struts2-learning/notes/01_HelloWorldUsingStruts2.md#hello-world-demo---使用struts-2-框架)
 
 框架使用Action类来处理HTML表单和其他请求，Action类返回一个结果，如：success, input, error
 ，基于从struts.xml中加载的映射关系，给定的结果名称可以选择一个页面，另一个Action或者一些其他网络资源（图像，PDF等）。
