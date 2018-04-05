@@ -5,6 +5,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page isELIgnored="false" %>
 <html>
 <head>
     <title>Basic Struts 2 Application - Welcome</title>
@@ -18,7 +19,7 @@
     <s:url action="hello" var="hellolink">
         <s:param name="userName">chester</s:param>
     </s:url>
-    <p><a href="${ hellolink }">Hello chester!</a></p>
+    <p><a href="${hellolink}">Hello chester!</a></p>
     <!-- Struts 2 Form Tag -->
     <p>Get your own personal hello by filling out and submitting this form.</p>
     <s:form action="hello">
@@ -26,6 +27,21 @@
         <s:submit value="Submit" />
     </s:form>
     <!-- Processing Form -->
-    <p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+    <%--<p><a href="register.jsp">Please register</a> for our prize drawing.</p>--%>
+    <!-- Message resource Bound -->
+    <s:url action="registerInput" var="registerInputLink" >
+        <s:param name="request_locale">en</s:param>
+    </s:url>
+    <p><a href="${registerInputLink}">Please register</a> for our prize drawing. </p>
+    <s:url action="registerInput" var="registerInputLinkES">
+        <s:param name="request_locale">es</s:param>
+    </s:url>
+    <p><a href="${registerInputLinkES}">Por favor, registrese</a>para nuestro sorteo</p>
+    <s:url action="registerInput" var="registerInputLinkCN">
+        <s:param name="request_locale">cn</s:param>
+    </s:url>
+    <p><a href="${registerInputLinkCN}">请注册</a>来进行抽奖</p>
+    <br />
+    <s:text name="contact" />
 </body>
 </html>
