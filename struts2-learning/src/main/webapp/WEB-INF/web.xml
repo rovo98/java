@@ -3,6 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
     <!--struts2 core mapping -->
     <filter>
         <filter-name>struts2</filter-name>
