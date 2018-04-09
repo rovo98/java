@@ -1,3 +1,4 @@
 # java
 
- learning notes.
+ learning notes and some exercises.
+
