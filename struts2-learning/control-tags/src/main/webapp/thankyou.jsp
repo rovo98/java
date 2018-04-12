@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Update Successful</title>
+    <s:head />
 </head>
 <body>
 <p>Your Update information: <s:property value="personBean"/></p>
