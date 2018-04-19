@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="global" />
+
+    <package name="basicstrus2" extends="struts-default">
+
+        <!-- setup the default-stack exception mapping interceptor
+     so that any exceptions not caught by this application
+     will be logged and then handled by the global exception
+     mapping -->
+        <interceptors>
+            <interceptor-stack name="appDefault">
+                <interceptor-ref name="defaultStack">
+                    <param name="exception.logEnabled">true</param>
+                    <param name="exception.logLevel">ERROR</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="appDefault" />
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">/error.jsp</result>
+            <result name="securityerror">/securityerror.jsp</result>
+        </global-results>
+
+
+        <global-exception-mappings>
+            <exception-mapping exception="com.rovo98.struts.register.exceptions.SecurityBreachException" result="securityerror" />
+            <exception-mapping exception="java.lang.Exception" result="error" />
+        </global-exception-mappings>
+
+
+
+        <action name="causesecurityexception" class="com.rovo98.struts.register.action.Register" method="throwSecurityException">
+            <result>/register.jsp</result>
+        </action>
+
+        <action name="causeexception" class="com.rovo98.struts.register.action.Register" method="throwException">
+            <result>/register.jsp</result>
+        </action>
+
+        <action name="causenullpointerexception" class="com.rovo98.struts.register.action.Register" method="throwNullPointerException">
+            <result>/register.jsp</result>
+        </action>
+
+        <action name="actionspecificexception" class="com.rovo98.struts.register.action.Register" method="throwSecurityException">
+            <exception-mapping exception="com.rovo98.struts.register.exceptions.SecurityBreachException"
+                               result="login" />
+            <result>/register.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+
+
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        <action name="hello" class="com.rovo98.struts.helloworld.action.HelloWorldAction"
+                method="execute">
+            <result name="success">/HelloWorld.jsp</result>
+        </action>
+
+        <action name="registerInput" class="com.rovo98.struts.register.action.Register"
+                method="input">
+            <result name="input">/register.jsp</result>
+        </action>
+        <action name="register" class="com.rovo98.struts.register.action.Register"
+                method="execute">
+            <result name="success">/thankyou.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+    </package>
+</struts>
