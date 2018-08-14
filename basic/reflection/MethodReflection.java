@@ -24,7 +24,7 @@ public class MethodReflection {
      */
     public static void main(String[] args) {
         try {
-            Class stuClass = Class.forName("basical.reflect.Student");
+            Class<?> stuClass = Class.forName("basical.reflect.Student");
 
             System.out.println("******************获取所有公有方法*****************");
             Method[] methods = stuClass.getMethods();
