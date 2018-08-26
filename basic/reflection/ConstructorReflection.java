@@ -23,7 +23,7 @@ public class ConstructorReflection {
     public static void main(String[] args) {
         try {
             // 获取Student 类的类类型对象
-            Class stuClass = Class.forName("basical.reflect.Student");
+            Class<?> stuClass = Class.forName("basical.reflect.Student");
 
             System.out.println("****************获取所有公有构造方法*****************");
             Constructor[] constructors = stuClass.getConstructors();
@@ -38,7 +38,7 @@ public class ConstructorReflection {
             }
 
             System.out.println("****************获取单个公有构造方法*****************");
-            Constructor c = stuClass.getConstructor(null);
+            Constructor c = stuClass.getConstructor();
             System.out.println(c);
             Object stu = c.newInstance();
 

@@ -24,7 +24,7 @@ public class FieldsReflection {
      */
     public static void main(String[] args) {
         try {
-            Class stuClass = Class.forName("basical.reflect.Student");
+            Class<?> stuClass = Class.forName("basical.reflect.Student");
 
             System.out.println("**********************获取所有公有成员变量**************");
             Field[] fields = stuClass.getFields();
