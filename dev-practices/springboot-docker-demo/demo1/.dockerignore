@@ -1,0 +1,13 @@
+# ignore unnecessary files for building image (do not sending these following files to docker server)
+
+.mvn
+.gitignore
+mvnw
+mvnw.cmd
+pom.xml
+src
+target/classes
+target/generated-sources
+target/maven-archiver
+target/maven-status
+target/*.jar.original
