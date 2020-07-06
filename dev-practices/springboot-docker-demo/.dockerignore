@@ -1,0 +1,10 @@
+# Ignoring unnecessary files for building images.
+
+.idea
+*.xml
+*.iml
+images
+demo1
+demo2
+.gitignore
+*.md
