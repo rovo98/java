@@ -1,3 +1,3 @@
-# java
+# Intro
 
- learning notes and some exercises.
+This repository mainly records my java practice cases, learning notes and etc.
